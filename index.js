@@ -79,6 +79,8 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
  *    responses:
  *      '200':
  *        description: A successful response
+ *      '500':
+ *        description: Internal Server Error
  */ 
 app.get('/repos/:username', cashed,async(req, res, next) => {
     try{
